@@ -201,8 +201,39 @@ h3 {
     white-space: normal;
     padding: 0 30px;
   }
+/* offers product */
+.container001{
+  margin-top: 80px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 0px;
+}
 
-
+/* discount*/
+.style-1{
+  del {
+    color: red;
+    text-decoration: none;
+    position: relative;
+    &:before {
+      content: " ";
+      display: block;
+      width: 100%;
+      border-top: 2px solid red;
+      height: 12px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: rotate(-7deg);
+    }
+  }
+  ins {
+    color: green;
+    font-size: 32px;
+    text-decoration: none;
+    padding: 1em 1em 1em .5em;
+  }
+}
 {% endblock style %}
 
 
@@ -247,9 +278,227 @@ h3 {
         </div>
     </div>
 </section>
-
 </div>
 
+
+
+
+<!-- offer product -->
+
+<div class="container001">
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/image/8.jpg" alt="image">
+        <div class="card-body">
+          <p class="card-text"><b>SHEIN Men Flap Pocket Denim Jacket</b></p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+            </div>
+            <div class="discount">
+              <div class="style-1">
+                <del>
+                  <span class="amount">€35,00</span>
+                </del>
+                <ins>
+                  <span class="amount">€32,50</span>
+                </ins>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/image/9.jpg" alt="image">
+        <div class="card-body">
+          <p class="card-text"><b>Brown Stretch Relax Fit Cargo Trouser</b></p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+            </div>
+            <div class="discount">
+              <div class="style-1">
+                <del>
+                  <span class="amount">€35,00</span>
+                </del>
+                <ins>
+                  <span class="amount">€32,50</span>
+                </ins>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/image/10.jpg" alt="image">
+        <div class="card-body">
+          <p class="card-text"><b>Green Track Pants</b>.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+            </div>
+            <div class="discount">
+              <div class="style-1">
+                <del>
+                  <span class="amount">€35,00</span>
+                </del>
+                <ins>
+                  <span class="amount">€32,50</span>
+                </ins>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/image/11.jpg" alt="image">
+        <div class="card-body">
+          <p class="card-text"><b>Tomato Soup Hoodie</b></p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+            </div>
+            <div class="discount">
+              <div class="style-1">
+                <del>
+                  <span class="amount">€35,00</span>
+                </del>
+                <ins>
+                  <span class="amount">€32,50</span>
+                </ins>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/image/7.jpg" alt="image">
+        <div class="card-body">
+          <p class="card-text"><b>Designer Clothes</b></p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+            </div>
+            <div class="discount">
+              <div class="style-1">
+                <del>
+                  <span class="amount">€35,00</span>
+                </del>
+                <ins>
+                  <span class="amount">€32,50</span>
+                </ins>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/image/13.jpg" alt="image">
+        <div class="card-body">
+          <p class="card-text"><b>Helloween Skeleton Hands T-shirt</b></p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+            </div>
+            <div class="discount">
+              <div class="style-1">
+                <del>
+                  <span class="amount">€35,00</span>
+                </del>
+                <ins>
+                  <span class="amount">€32,50</span>
+                </ins>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/image/14.jpg" alt="image">
+        <div class="card-body">
+          <p class="card-text"><b>Moon Jacket</b></p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+            </div>
+            <div class="discount">
+              <div class="style-1">
+                <del>
+                  <span class="amount">€35,00</span>
+                </del>
+                <ins>
+                  <span class="amount">€32,50</span>
+                </ins>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/image/15.jpg" alt="image">
+        <div class="card-body">
+          <p class="card-text"><b>Double drape Jacket</b></p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+            </div>
+            <div class="discount">
+              <div class="style-1">
+                <del>
+                  <span class="amount">€35,00</span>
+                </del>
+                <ins>
+                  <span class="amount">€32,50</span>
+                </ins>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="/static/image/16.jpg" alt="image">
+        <div class="card-body">
+          <p class="card-text"><b>Oversized T-shirt</b></p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+            </div>
+            <div class="discount">
+              <div class="style-1">
+                <del>
+                  <span class="amount">€35,00</span>
+                </del>
+                <ins>
+                  <span class="amount">€32,50</span>
+                </ins>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 {% endblock body %}
