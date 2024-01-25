@@ -53,3 +53,7 @@ def signup(request):
         else:
             messages.error(request,'Repassword dose not match!')
     return render(request,'signup.html')
+
+
+def offers(request):
+    return render(request,'offers.html')

@@ -3,13 +3,134 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>fashTOP-home</title>
+    <title>fashTOP-{% block title %}home{% endblock title %}</title>
     <style>
-      nav{
+{% block style %}
+/* body */
+
+.container0{
+  background-color: lightgrey;
+}
+
+      
+
+/* carousel */
+
+.container1{
+  margin-top: 120px;
+  margin-left: 5px;
+  background-image: url(/static/image/7.jpg);
+}
+
+
+
+
+
+.container1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 450px;
+  gap: 10px;
+
+  > div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: url("/static/image/4.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(2) {
+      background: url("/static/image/2.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(3) {
+      background: url("/static/image/3.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(4) {
+      background: url("/static/image/1.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(5) {
+      background: url("/static/image/5.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(6) {
+      background: url("/static/image/6.jpg")
+        no-repeat 50% / cover;
+    }
+   
+
+    .content1 {
+      font-size: 1.5rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      background: rgb(2, 2, 46);
+      background: linear-gradient(
+        0deg,
+        rgba(2, 2, 46, 0.6755077030812324) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+
+    }
+
+    &:hover {
+      flex: 0 0 250px;
+      box-shadow: 1px 3px 15px #7645d8;
+      transform: translatey(-30px);
+    }
+
+    &:hover .content1 {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
+}
+
+/* product */
+
+
+
+.container01{
+  margin-top: 80px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 0px;
+
+}
+
+.btn-group{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  background-color: rgb(98, 211, 248);
+}
+
+{% endblock style %}
+
+/* for sticky navbar */
+
+
+nav{
         background-color:#F15990;
       }
-/* for sticky navbar */
-   
+
   .nav-content{
   margin: 0;
   padding: 0;
@@ -120,109 +241,6 @@ h2{
     30px 30px 0px #90B1E0;
 }
 
-/* carousel */
-
-.container1{
-  margin-top: 120px;
-  margin-left: 5px;
-  background-image: url(/static/image/7.jpg);
-}
-
-
-
-
-
-.container1 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  height: 450px;
-  gap: 10px;
-
-  > div {
-    flex: 0 0 120px;
-    border-radius: 0.5rem;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
-    box-shadow: 1px 5px 15px #1e0e3e;
-    position: relative;
-    overflow: hidden;
-
-    &:nth-of-type(1) {
-      background: url("/static/image/4.jpg")
-        no-repeat 50% / cover;
-    }
-    &:nth-of-type(2) {
-      background: url("/static/image/2.jpg")
-        no-repeat 50% / cover;
-    }
-    &:nth-of-type(3) {
-      background: url("/static/image/3.jpg")
-        no-repeat 50% / cover;
-    }
-    &:nth-of-type(4) {
-      background: url("/static/image/1.jpg")
-        no-repeat 50% / cover;
-    }
-    &:nth-of-type(5) {
-      background: url("/static/image/5.jpg")
-        no-repeat 50% / cover;
-    }
-    &:nth-of-type(6) {
-      background: url("/static/image/6.jpg")
-        no-repeat 50% / cover;
-    }
-   
-
-    .content1 {
-      font-size: 1.5rem;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      padding: 15px;
-      opacity: 0;
-      flex-direction: column;
-      height: 100%;
-      justify-content: flex-end;
-      background: rgb(2, 2, 46);
-      background: linear-gradient(
-        0deg,
-        rgba(2, 2, 46, 0.6755077030812324) 0%,
-        rgba(255, 255, 255, 0) 100%
-      );
-      transform: translatey(100%);
-      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
-      visibility: hidden;
-
-    }
-
-    &:hover {
-      flex: 0 0 250px;
-      box-shadow: 1px 3px 15px #7645d8;
-      transform: translatey(-30px);
-    }
-
-    &:hover .content1 {
-      opacity: 1;
-      transform: translatey(0%);
-      visibility: visible;
-    }
-  }
-}
-
-/* product */
-
-.container01{
-  margin-top: 80px;
-  margin-left: 50px;
-  margin-right: 50px;
-
-}
-
-.btn-group{
-  background-color:pink;
-  color: whitesmoke;
-}
 
 /* footer */
 
@@ -271,6 +289,8 @@ footer{
 
 
   <body>
+<div class="container0">
+  {% block body %}
    
    <!-- crausal -->
    
@@ -323,6 +343,7 @@ footer{
             <div class="btn-group">
               <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
             </div>
+            <p><b style="color: green;">₹1,500/-</b></p>
           </div>
         </div>
       </div>
@@ -336,6 +357,7 @@ footer{
             <div class="btn-group">
               <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
             </div>
+            <p><b style="color: green;">₹800/-</b></p>
           </div>
         </div>
       </div>
@@ -349,6 +371,7 @@ footer{
             <div class="btn-group">
               <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
             </div>
+            <p><b style="color: green;">₹700/-</b></p>
           </div>
         </div>
       </div>
@@ -363,6 +386,7 @@ footer{
             <div class="btn-group">
               <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
             </div>
+            <p><b style="color: green;">₹1,000/-</b></p>
           </div>
         </div>
       </div>
@@ -376,6 +400,7 @@ footer{
             <div class="btn-group">
               <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
             </div>
+            <p><b style="color: green;">₹5,500/-</b></p>
           </div>
         </div>
       </div>
@@ -389,6 +414,7 @@ footer{
             <div class="btn-group">
               <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
             </div>
+            <p><b style="color: green;">₹450/-</b></p>
           </div>
         </div>
       </div>
@@ -403,6 +429,7 @@ footer{
             <div class="btn-group">
               <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
             </div>
+          <p><b style="color: green;">₹6,500/-</b></p>
           </div>
         </div>
       </div>
@@ -416,6 +443,7 @@ footer{
             <div class="btn-group">
               <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
             </div>
+            <p><b style="color: green;">₹12,000/-</b></p>
           </div>
         </div>
       </div>
@@ -429,6 +457,7 @@ footer{
             <div class="btn-group">
               <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
             </div>
+            <p><b style="color: green;">₹900/-</b></p>
           </div>
         </div>
       </div>
@@ -437,39 +466,8 @@ footer{
 </div>
 
 
-
-
-
-<!-- logo -->
-<nav>
-  <div class="nav-content">
-    <div class="logo">
-      fashTOP
-    </div>
-    
-
-
-
-  <!--navbar-->
-    <div class="textonnave">
-      <ul class="nav-links">
-        <li ><a href="">Home</a></li>
-        <li><a href="">Offers</a></li>
-        <li><a href="">Products</a></li>
-        <li><a href="logoutuser">logout</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-
-
-
-
-
     <section class="home"></section>
-<div class="text">
+<div class="text" style="background-color: rgb(235, 188, 188)">
       <p><h2>About Us</h2>
       <p>At FashTOP, we believe that fashion is more than just clothing; it's a statement, an expression of individuality, and a reflection of your unique personality. We are your go-to destination for the latest trends in stylish clothing for both men and women.</p>
 
@@ -484,6 +482,31 @@ footer{
       </h5></p>
       <p>Whether you're dressing up for a special event, updating your everyday wardrobe, or looking for the perfect gift, FashTOP has you covered. Explore our carefully curated categories, including Men's Fashion, Women's Fashion, and Accessories, to find the perfect ensemble for any occasion.</p>
 </div>
+</div>
+
+
+{% endblock body %}
+<!-- logo -->
+<nav>
+  <div class="nav-content">
+    <div class="logo">
+      fashTOP
+    </div>
+    
+
+
+
+  <!--navbar-->
+    <div class="textonnave">
+      <ul class="nav-links">
+        <li ><a href="/">Home</a></li>
+        <li><a href="offers">Offers</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="logoutuser">logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 
 <!-- footer -->
@@ -518,5 +541,6 @@ footer{
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   
   </body>
 </html>
