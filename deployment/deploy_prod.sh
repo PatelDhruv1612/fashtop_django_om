@@ -1,9 +1,10 @@
 #!/bin/sh
 
 #ssh root@your_public_ipv4<<EOF
-ssh root@15.206.168.138<<EOF
+ssh root@13.127.156.52<<EOF
   cd fashtop_django_om
   git pull 
+  pip install -r requirements.txt
   source env/bin/activate
   ./manage.py migrate
   sudo systemctl restart nginx
