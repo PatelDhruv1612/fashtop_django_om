@@ -13,6 +13,6 @@ ExecStart=/home/ubuntu/fashtop_django_om/venv/bin/gunicorn \
           --bind unix:/run/gunicorn.sock \
           fashTOP.wsgi:application
 Restart=always
-RestartSec=30
+RestartSec=60
 [Install]
 WantedBy=multi-user.target
