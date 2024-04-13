@@ -6,7 +6,9 @@ python manage.py migrate
 # python manage.py makemigrations     
 python manage.py collectstatic
 sudo service gunicorn restart
-sudo service nginx restart
+sudo ufw allow 8000
+gunicorn --bind 0.0.0.0:8000 fashTOP.wsgi
+#--- sudo service nginx restart
 # sudo tail -f /var/log/nginx/error.log
 # sudo systemctl reload nginx
 # sudo tail -f /var/log/nginx/error.log
