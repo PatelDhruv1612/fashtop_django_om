@@ -1,6 +1,6 @@
 #!/usr/bin/bash 
 
-sed -i 's/\[]/\["13.201.51.52"]/' /home/ubuntu/fashtop_django_om/fashTOP/settings.py
+sed -i 's/\[]/\["13.201.49.123"]/' /home/ubuntu/fashtop_django_om/fashTOP/settings.py
 
 python manage.py migrate 
 # python manage.py makemigrations     
