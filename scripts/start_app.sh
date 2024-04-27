@@ -2,6 +2,7 @@
 
 sed -i 's/\[]/\["35.154.75.188"]/' /home/ubuntu/fashtop_django_om/fashTOP/settings.py
 
+
 python manage.py migrate 
 # python manage.py makemigrations     
 python manage.py collectstatic
